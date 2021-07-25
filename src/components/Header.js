@@ -1,14 +1,14 @@
 import React from 'react';
 import './Header.css';
 
-const Header=()=> {
+export default function Header() {
   return (
     <section className="hero">
       <div className="hero-body">
         <div className="container">
           <h1 id="white" className="title">Trivia Quiz!</h1>
           <h2 id="yellow" className="subtitle">
-             Select a category or answer questions
+            Test your knowledge of trivia! Select a category or answer questions
             from all possible categories.
           </h2>
         </div>
@@ -16,4 +16,3 @@ const Header=()=> {
     </section>
   );
 }
-export default Header;
