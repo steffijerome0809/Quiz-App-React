@@ -42,6 +42,13 @@ const QuizForm=()=>
 
     },[]);
 
+    //set the category that was selected
+    const handleChange=(e)=>{
+        e.preventDefault();
+        setState({...state,categoryId:e.target.value});
+    }
+
+
     //Conditional Rendering to display the filter form or Questions Div
     const displayFilter=()=>{
         if(state.filterDisplay===true)
