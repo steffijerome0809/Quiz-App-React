@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+# npm install @types/js-base64 --save-dev (this must be installed if base 64 module not found)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
