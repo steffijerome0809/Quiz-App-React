@@ -123,9 +123,9 @@ const QuizForm=()=>
 
     return(
         <div className="container">
-         {displayFilter()}
-
-        </div>
+        {displayScore()}
+        {displayFilter()}
+      </div>
     )
 }
 export default QuizForm;
