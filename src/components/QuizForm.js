@@ -33,7 +33,41 @@ const QuizForm=()=>
         filterDisplay:true,
         displayScore:false
 
-    })
+    });
+    // Component loads and get the list of questions from all possible categories
+    useEffect(()=>{
+        API.getPossibleCategories().then(response=>{
+            setState({...state,allCategories:response.data.trivia_categories});
+        })
 
+    },[]);
+
+    //Conditional Rendering to display the filter form or Questions Div
+    const displayFilter=()=>{
+        if(state.filterDisplay===true)
+        {
+            return(
+                <FilterForm
+                handleChange={handleChange}
+                filterDisplay={state.filterDisplay}
+                handleAllSubmit={handleAllSubmit}
+                handleCategorySubmit={handleCategorySubmit}
+                allCategories={state.allCategories}
+                />
+            )
+        }
+        else{
+            return(
+                <QuestionDiv/>
+            )
+        }
+    }
+
+    return(
+        <div className="container">
+         {displayFilter()}
+
+        </div>
+    )
 }
 export default QuizForm;
