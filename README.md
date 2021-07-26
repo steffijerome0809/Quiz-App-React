@@ -21,5 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Demo Link
 
-Open[]
+Open [https://steffijerome0809.github.io/Quiz-App-React/](https://steffijerome0809.github.io/Quiz-App-React/) to view it in the browser
+
 
